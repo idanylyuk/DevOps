@@ -21,7 +21,7 @@
     - PostgresSQL 9.2.24
 ### 3. Application deployment
 
--- Get IP adresses of Apache Tomcat Server and PostgreSQL Database Server. You may use commands
+#### - Get IP adresses of Apache Tomcat Server and PostgreSQL Database Server. You may use commands
 
 `$ ifconfig -a`
 
@@ -29,9 +29,9 @@ or
 
 `$ ip a`
 
--- Download [deploy application script](deploy) to Host.
+#### - Download [deploy application script](deploy) to Host.
 
--- You have to add your data to script - correct variables with your server adresses, database and gmail credantials.
+#### - You have to add your data to script - correct variables with your server adresses, database and gmail credantials.
 
           server_ip='10.1.1.112'
           db_server_ip='10.1.1.110'
@@ -41,7 +41,7 @@ or
           gmail_user='gmail_user'
           gmail_password='gmail_user_password'
 
--- Upload modified file `deploy` to Apache Tomcat Server on VM1.
+#### - Upload modified file `deploy` to Apache Tomcat Server on VM1.
             
 Login to Apache Tomcat Server via SSH. Create new file in user home directory
             
