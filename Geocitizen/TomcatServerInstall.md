@@ -2,6 +2,18 @@
 ##1. Install Ubuntu Server 16
 [Install source](https://releases.ubuntu.com/16.04/)
 
+
+    **3.** You have to add your data to script - correct variables with your server adresses, database and gmail credantials.
+
+          server_ip='10.1.1.112'
+          db_server_ip='10.1.1.110'
+          db_name='db_name'
+          db_user='db_user'
+          db_password='db_password'
+          gmail_user='gmail_user'
+          gmail_password='gmail_user_password'
+
+
 <span style="color:red">10.1.1.112</span>
 
 Install sequrity updates!
