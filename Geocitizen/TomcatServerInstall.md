@@ -4,8 +4,8 @@
 
 Install sequrity 
 ```
-html
-<span color="#ff0000">updates</span>
+diff
+- updates
 ``` 
 during install ...
 
