@@ -23,11 +23,11 @@
 
 -- Get IP adresses of Apache Tomcat Server and PostgreSQL Database Server. You may use commands
 
-         $ ifconfig -a
+`$ ifconfig -a`
 
-            or
+or
 
-         $ ip a
+`$ ip a`
 
 -- Download [deploy application script](deploy) to Host.
 
@@ -43,21 +43,21 @@
 
 -- Upload modified file `deploy` to Apache Tomcat Server on VM1.
             
-       Login to Apache Tomcat Server via SSH. Create new file in user home directory
+Login to Apache Tomcat Server via SSH. Create new file in user home directory
             
-       $ nano deploy
+`$ nano deploy`
        
-       Copy text from modified script to SSH console with opened file `deploy` (`Ctrl+Shift+V` shortcut or right key of mouse -> insert). Save file and exit.
+Copy text from modified script to SSH console with opened file `deploy` (`Ctrl+Shift+V` shortcut or right key of mouse -> insert). Save file and exit.
 
-       Give execute rights to file
+Give execute rights to file
 
-       $ chmod u+x deploy`
+`$ chmod u+x deploy`
 
-       and run it
+and run it
 
-       $ ./deploy
+`$ ./deploy`
         
-       Enter sudo user password (if needed). Wait Tomcat server to deploy application.
+Enter sudo user password (if needed). Wait Tomcat server to deploy application.
 
         
 ### 4. Run application on Host web browser
