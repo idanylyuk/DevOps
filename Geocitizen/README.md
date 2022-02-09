@@ -1,7 +1,7 @@
 # Geocitizen project
 
 ### 1. Requirements to Host PC
-        Host PC with Oracle VirtualBox  and SSH client installed.
+`Host PC with Oracle VirtualBox and SSH client installed.`
 
 ### 2. Create 2 VitrualBox VMs:
 **VM1 (Apache Tomcat Server)** (1-2 Gb RAM): 
