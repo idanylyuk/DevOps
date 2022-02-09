@@ -29,7 +29,7 @@
 
          $ ip a
 
--- Download [deploy application script](fff) to Host.
+-- Download [deploy application script](deploy) to Host.
 
 -- You have to add your data to script - correct variables with your server adresses, database and gmail credantials.
 
