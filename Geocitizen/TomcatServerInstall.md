@@ -1,9 +1,10 @@
 # Install TomCat Server on Ubuntu 16.04 Server
 ##1. Install Ubuntu Server 16
 [Install source](https://releases.ubuntu.com/16.04/)
+
 <span style="color:red">10.1.1.112</span>
-Install sequrity 
-![#f03c15]updates!`f03c15`
+
+Install sequrity updates!
 ``` 
 during install ...
 
