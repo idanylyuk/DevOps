@@ -1,35 +1,18 @@
 # Install TomCat Server on Ubuntu 16.04 Server
-##1. Install Ubuntu Server 16
+## 1. Install Ubuntu Server 16
 [Install source](https://releases.ubuntu.com/16.04/)
 
-**3.** You have to add your data to script - correct variables with your server adresses, database and gmail credantials.
-
-          server_ip='10.1.1.112'
-          db_server_ip='10.1.1.110'
-          db_name='db_name'
-          db_user='db_user'
-          db_password='db_password'
-          gmail_user='gmail_user'
-          gmail_password='gmail_user_password'
-
-
-<span style="color:red">10.1.1.112</span>
-
-Install sequrity updates!
-``` 
-during install ...
+Install sequrity updates during install ...
 
 Install Open SSH Server ...
 
 PS. On Ubuntu Server root login is not allowed by default. Login as user and change root password if needed.
 
-##2. Login to installed server via SSH, install mc
+## 2. Login to installed server via SSH
 
 `$ ssh user@ip-address`
 
-`$ sudo apt install mc`
-
-##3. Install ORACLE JAVA SDK 8
+## 3. Install ORACLE JAVA SDK 8
 
 tar.gz can be dowloaded from [oracle](https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6) without registering
 
@@ -67,7 +50,7 @@ Check JAVA version and JAVA_HOME variable
 
 `# echo $JAVA_HOME`
 
-##4. Install Tomcat
+## 4. Install Tomcat
 
 [Manual](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04)
 
@@ -98,7 +81,7 @@ We will install Tomcat to the `/opt/tomcat` directory. Create the directory, the
 
 Next, we can set up the proper user permissions for our installation.
 
-##5. Update Permissions
+## 5. Update Permissions
 
 The `tomcat` user that we set up needs to have access to the Tomcat installation. We’ll set that up now.
 
@@ -122,7 +105,7 @@ Make the `tomcat` user the owner of the `webapps`, `work`, `temp`, and `logs` di
 
 Now that the proper permissions are set up, we can create a `systemd` service file to manage the Tomcat process.
 
-##6. Create a `systemd` Service File
+## 6. Create a `systemd` Service File
 
 We want to be able to run Tomcat as a service, so we will set up `systemd` service file.
 
@@ -183,7 +166,7 @@ Double check that it started without errors by typing:
 
 `# systemctl status tomcat`
 
-##7. Adjust the Firewall and Test the Tomcat Server
+## 7. Adjust the Firewall and Test the Tomcat Server
 
 Now when the Tomcat service is started, we can test to make sure the default page is available.
 
@@ -205,7 +188,7 @@ If you were able to successfully accessed Tomcat, now is a good time to enable t
 
 `# systemctl enable tomcat`
 
-##8.Configure Tomcat Web Management Interface
+## 8. Configure Tomcat Web Management Interface
 
 In order to use the manager web app that comes with Tomcat, we must add a login to our Tomcat server. We will do this by editing the `tomcat-users.xml` file:
 
@@ -246,7 +229,7 @@ To put our changes into effect, restart the Tomcat service:
 
 `# systemctl restart tomcat`
 
-##9. Access the Web Interface
+## 9. Access the Web Interface
 
 Now that we have create a user, we can access the web management interface again in a web browser. Once again, you can get to the correct interface by entering your server’s domain name or IP address followed on port `8080` in your browser:
 
@@ -254,7 +237,7 @@ Now that we have create a user, we can access the web management interface again
 
 Tomcat installation is functional, but entirely unencrypted. This means that all data, including sensitive items like passwords, are sent in plain text that can be intercepted and read by other parties on the internet. In order to prevent this from happening, it is strongly recommended that you encrypt your connections with SSL. You can find out how to encrypt your connections to Tomcat by following this [guide](https://www.digitalocean.com/community/tutorials/how-to-encrypt-tomcat-8-connections-with-apache-or-nginx-on-ubuntu-16-04).
 
-##10. Install Maven
+## 10. Install Maven
 
 `$ sudo apt install maven`
 
