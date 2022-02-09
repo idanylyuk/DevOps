@@ -3,9 +3,7 @@
 [Install source](https://releases.ubuntu.com/16.04/)
 
 Install sequrity 
-```
-diff
-- updates
+![#f03c15]updates!`f03c15`
 ``` 
 during install ...
 
