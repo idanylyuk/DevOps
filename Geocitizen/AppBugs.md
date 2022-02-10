@@ -8,7 +8,7 @@ replace
 
 with 
 
-`http://repo.spring.io`
+`https://repo.spring.io`
 
 ### 2. Remove unused local repository section
 
