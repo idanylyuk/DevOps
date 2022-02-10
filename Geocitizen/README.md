@@ -19,7 +19,9 @@
 
     - Open SSH Server
     - PostgresSQL 9.2.24
-### 3. Application deployment
+### 3. Application fixing / deployment
+
+#### - Released on GitHub application have some [bugs](AppBugs.md). They are fixed automatically by deploy application script (see below).
 
 #### - Get IP adresses of Apache Tomcat Server and PostgreSQL Database Server. You may use commands
 
