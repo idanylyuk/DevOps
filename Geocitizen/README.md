@@ -1,7 +1,7 @@
 # Geocitizen project
 
 ### 1. Requirements to Host PC
-`Host PC with Oracle VirtualBox and SSH client installed.`
+`Host PC with Oracle VM VirtualBox and SSH client installed.`
 
 ### 2. Create 2 VitrualBox VMs:
 **VM1 (Apache Tomcat Server)** (1-2 Gb RAM): 
@@ -18,7 +18,7 @@
 ***CentOS 7.9.2009*** [Configuration details](PostgreSQL.md)
 
     - Open SSH Server
-    - PostgresSQL 9.2.24
+    - PostgreSQL 9.2.24
 ### 3. Application fixing / deployment
 
 #### - Released on GitHub application have some [bugs](AppBugs.md). They are fixed automatically by deploy application script (see below).
