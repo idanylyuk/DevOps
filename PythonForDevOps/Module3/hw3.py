@@ -9,10 +9,10 @@ prefix = sys.argv[4]
 counts = int(sys.argv[5])
 mode = sys.argv[6]
 
-user_name = 'mint'
+print('Enter username:')
+user_name = input()
 print('Enter user \"' + user_name + '\" password:')
 user_password = getpass.getpass()
-# user_password = '123456'
 
 # start ssh connection
 ssh = paramiko.SSHClient()
