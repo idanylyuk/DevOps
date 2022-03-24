@@ -14,7 +14,7 @@ Get Ansible info
 ```
 $ ansible --version
 ```
-###2. Create Inventory file
+### 2. Create Inventory file
 
 Example for local VMs
 
@@ -28,13 +28,13 @@ test2 ansible_host=10.1.1.105 ansible_user=ubuntu ansible_ssh_private_key_file=/
 test3 ansible_host=10.1.1.110 ansible_user=ubuntu ansible_ssh_private_key_file=/home/test/.ssh/key_VB
 ```
 
-###3. Ping hosts
+### 3. Ping hosts
 
 ```
 ansible -i hosts.txt all -m ping
 ```
 
-###4. Create config file to store main config details
+### 4. Create config file to store main config details
 
 ```
 ansible.cfg
@@ -51,7 +51,7 @@ After defining config file in ansible directory ping all hosts looks much more s
 $ ansible all -m ping
 ```
 
-###5. Define ansible playbook
+### 5. Define ansible playbook
 
 ```
 #playbook1.yml
@@ -73,7 +73,7 @@ Playbook run
 $ ansible-playbook playbook1.yml
 ```
 
-###6. Move variables from inventory file to group_vars folder files
+### 6. Move variables from inventory file to group_vars folder files
 
 ```
 ansible.cfg

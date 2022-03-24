@@ -1,4 +1,4 @@
-###1. Install Terraform
+### 1. Install Terraform
 
 Terraform AWS Docs
 https://learn.hashicorp.com/collections/terraform/aws-get-started
@@ -14,11 +14,11 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 sudo apt-get update && sudo apt-get install terraform
 ```
 
-###2. Create / copy *.tf to terraform folder
+### 2. Create / copy *.tf to terraform folder
 
-###3. Create AWS user with AdministratorAccess. Remember security credentials (access_key, secret_key)
+### 3. Create AWS user with AdministratorAccess. Remember security credentials (access_key, secret_key)
 
-###4. Add AWS credentials
+### 4. Add AWS credentials
 
 ```
 $ aws cli install
@@ -82,11 +82,11 @@ CREDENTIALS IN SESSION!!!
 
 For futher automation 2 variant was selected.
 
-###5. Test run configuration
+### 5. Test run configuration
 terraform plan
 
-###6. Run configuration
+### 6. Run configuration
 terraform apply
 
-###7. Destroy all previously created
+### 7. Destroy all previously created
 terraform destroy
